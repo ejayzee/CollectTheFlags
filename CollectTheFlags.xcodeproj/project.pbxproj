@@ -13,6 +13,7 @@
 		B171FFE71DE5A3070006416C /* CollectTheFlags.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B171FFE51DE5A3070006416C /* CollectTheFlags.xcdatamodeld */; };
 		B171FFE91DE5A3070006416C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B171FFE81DE5A3070006416C /* Assets.xcassets */; };
 		B171FFEC1DE5A3070006416C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B171FFEA1DE5A3070006416C /* LaunchScreen.storyboard */; };
+		B171FFF51DE5A6070006416C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B171FFF41DE5A6070006416C /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B171FFE81DE5A3070006416C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B171FFEB1DE5A3070006416C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B171FFED1DE5A3070006416C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B171FFF41DE5A6070006416C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B171FFF51DE5A6070006416C /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,7 @@
 			children = (
 				B171FFDD1DE5A3070006416C /* CollectTheFlags */,
 				B171FFDC1DE5A3070006416C /* Products */,
+				B171FFF31DE5A6070006416C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +69,14 @@
 				B171FFE51DE5A3070006416C /* CollectTheFlags.xcdatamodeld */,
 			);
 			path = CollectTheFlags;
+			sourceTree = "<group>";
+		};
+		B171FFF31DE5A6070006416C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B171FFF41DE5A6070006416C /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
