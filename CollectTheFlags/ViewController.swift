@@ -28,6 +28,21 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             
             manager.startUpdatingLocation()
             
+            Timer.scheduledTimer(withTimeInterval: 5, repeats: true, block: { (timer) in
+                // Spawn a Flag
+                
+                if let coord = self.manager.location?.coordinate {
+                    let anno = MKPointAnnotation()
+                    anno.coordinate = coord
+                    let randoLat = (Double(arc4random_uniform(20)) - 10.0) / 10000.0
+                    let randoLon = (Double(arc4random_uniform(20)) - 10.0) / 10000.0
+                    anno.coordinate.latitude += randoLat
+                    anno.coordinate.longitude += randoLon
+                    self.mapView.addAnnotation(anno)
+                }
+            })
+            
+            
         } else {
             manager.requestWhenInUseAuthorization()
         }
@@ -36,8 +51,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
-        if updateCount < 1 {
-        let region = MKCoordinateRegionMakeWithDistance(manager.location!.coordinate, 30, 30)
+        if updateCount < 3 {
+        let region = MKCoordinateRegionMakeWithDistance(manager.location!.coordinate, 75, 75)
         mapView.setRegion(region, animated: false)
             updateCount += 1
         } else {
@@ -48,7 +63,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBAction func centerTapped(_ sender: Any) {
         
         if let coord = manager.location?.coordinate {
-        let region = MKCoordinateRegionMakeWithDistance(coord, 30, 30)
+        let region = MKCoordinateRegionMakeWithDistance(coord, 75, 75)
         mapView.setRegion(region, animated: true)
         }
     }
