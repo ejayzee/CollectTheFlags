@@ -20,6 +20,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        addAllFlags()
+        
         manager.delegate = self
         
         if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {

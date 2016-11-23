@@ -14,6 +14,8 @@
 		B171FFE91DE5A3070006416C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B171FFE81DE5A3070006416C /* Assets.xcassets */; };
 		B171FFEC1DE5A3070006416C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B171FFEA1DE5A3070006416C /* LaunchScreen.storyboard */; };
 		B171FFF51DE5A6070006416C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B171FFF41DE5A6070006416C /* MapKit.framework */; };
+		B171FFF71DE5BC890006416C /* AtlasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B171FFF61DE5BC890006416C /* AtlasViewController.swift */; };
+		B171FFF91DE5BED00006416C /* CoreDataHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B171FFF81DE5BED00006416C /* CoreDataHelp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		B171FFEB1DE5A3070006416C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B171FFED1DE5A3070006416C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B171FFF41DE5A6070006416C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B171FFF61DE5BC890006416C /* AtlasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtlasViewController.swift; sourceTree = "<group>"; };
+		B171FFF81DE5BED00006416C /* CoreDataHelp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 			children = (
 				B171FFDE1DE5A3070006416C /* AppDelegate.swift */,
 				B171FFE01DE5A3070006416C /* ViewController.swift */,
+				B171FFF61DE5BC890006416C /* AtlasViewController.swift */,
+				B171FFF81DE5BED00006416C /* CoreDataHelp.swift */,
 				B171FFE21DE5A3070006416C /* Main.storyboard */,
 				B171FFE81DE5A3070006416C /* Assets.xcassets */,
 				B171FFEA1DE5A3070006416C /* LaunchScreen.storyboard */,
@@ -152,8 +158,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B171FFF71DE5BC890006416C /* AtlasViewController.swift in Sources */,
 				B171FFE11DE5A3070006416C /* ViewController.swift in Sources */,
 				B171FFDF1DE5A3070006416C /* AppDelegate.swift in Sources */,
+				B171FFF91DE5BED00006416C /* CoreDataHelp.swift in Sources */,
 				B171FFE71DE5A3070006416C /* CollectTheFlags.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
